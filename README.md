@@ -18,6 +18,11 @@ Just run `make`.  You'll need `gtk3` and a corresponding `webkitgtk`.  (At least
 
 If you're building this on some other distro, I'd like to hear how it went, regardless of the outcome!  If it exploded, raise an issue.  If it worked, consider submitting a PR to this `README` with what packages you needed.
 
+uxbuntu 16.10 complied with those extra packages OK:
+```
+sudo apt install clang libwebkitgtk-3.0-dev
+```
+
 ## Running
 
 Serve the stuff you want on it from a web server of some kind (`python -m http.server` is nice), then run `hudkit http://whateverrr` for an appropriate value of `whateverrr` (such as `localhost:8000`).  See `examples/` for a dead simple commented base to test with.
